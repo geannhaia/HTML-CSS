@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essa site em varios dispoditivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <p>
+        <picture><!--Ultilizat tag picture + source max para modificar a imagem para cada tamanho de tela do usuario-->
+            <source media="(max-width: 750px)" srcset="Imagens/foto-.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/fotom.png" type="image/png">
+            <img src="Imagens/fotog.png" alt="Imagem flexivel">
+        </picture>
+    </p>
+    <p>
+        <picture><!--sempre seguir a ordem correta dos tamanhos para funcionar-->
+            <source media="(min-width: 1050px)" srcset="imagens/fotog.png" type="image/png">
+            <source media="(min-width: 750px)" srcset="imagens/fotom.png" type="image/png">
+            <img src="imagens/foto-.png" alt="Imagem p">
+        </picture>
+    </p>
+    <h1>Reprodução de audio</h1><!--pode ser carregado da mesma forma das imagens em formatos diferentes-->
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/Enough-neffex.mp3" controls autoplay></audio>
+</body>
+</html>
